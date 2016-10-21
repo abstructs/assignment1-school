@@ -81,4 +81,8 @@ section header h2 {
   width: 50%;
 }
 
+#coursework-content ul li {
+  margin-top: 25px;
+}
+
 /* Skills Section CSS */
