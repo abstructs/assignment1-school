@@ -1,0 +1,84 @@
+
+body {
+  margin 0px auto;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+}
+
+#jumbotron {
+  background-image: url("https://hd.unsplash.com/photo-1460751329354-07d91b47af38");
+  background-repeat: no-repeat;
+  background-position: 0% 44%;
+  background-size: cover;
+  height: 500px;
+}
+
+#jumbotron h1 {
+  padding-top: 250px;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#jumbotron h1, #jumbotron p, #jumbotron h2 {
+  color: white;
+  padding-left: 20px;
+}
+
+#nav-list li, p{
+  display: inline;
+}
+
+#nav-list {
+  background-color: lightgrey;
+  padding: 15px 0px 15px 25px;
+  border-radius: 1px;
+}
+
+#nav-list li a {
+  text-decoration: none;
+}
+
+section header h1, section header h2, section header, p {
+  text-align: center;
+}
+
+section header h2 {
+  margin-bottom: 10px;
+}
+
+.column-panel {
+  margin: 70 auto;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-top: black;
+}
+
+.column-content {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.column-content ul {
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+
+.column-content p {
+  text-align: left;
+}
+
+.row {
+  margin-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Education Section CSS */
+
+#school-content, #coursework-content {
+  width: 50%;
+}
+
+/* Skills Section CSS */
