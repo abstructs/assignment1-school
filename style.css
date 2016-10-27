@@ -5,17 +5,13 @@ body {
   color: white;
 }
 
-/*h1, h2, h3 {
-  color: #008FFF;
-}*/
-
 /* Section exlusive styles */
 
-#education-section, #skills-section, #activities-section, #video-section {
+#education-section, #skills-section, #activities-section, #videos-section, #images-section {
   margin: 70px 70px;
 }
 
-#education-section h1, h2, h3, #skills-section h1, h2, h3, #activities-section h1, h2, h3, #video-section h1, h2, h3 {
+h1, h2, h3 {
   color: #008FFF;
 }
 
@@ -267,4 +263,32 @@ section header h2 {
 
 #video-section h1 {
   text-align: center;
+}
+
+/* Images Page */
+
+.image-content {
+  border: 5px black solid;
+  padding-top: 20px;
+  height: 300px;
+  background-color: #110000;
+}
+
+.image-content div {
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 100%;
+  background-position: 40% 40%;
+  display: inline-block;
+  background-image: url('/assets/gallery/parrot.jpeg');
+  background-size: cover;
+}
+
+.image-content-1 {
+  width: 31%;
+  display:inline-block;
+}
+
+.image-content-2 {
+  width: 66%;
 }
