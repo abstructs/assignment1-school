@@ -135,7 +135,7 @@ section header h2 {
 }
 
 #circle-3 {
-  background-image: url('./assets/money.png');
+  background-image: url('./assets/skills.png');
   background-size: 60px 60px;
   background-color: #008FFF;
 }
@@ -297,6 +297,10 @@ section header h2 {
 }
 
 /* Videos Page */
+
+iframe {
+  width: 100%;
+}
 
 .video-content {
   margin: 0px auto;
