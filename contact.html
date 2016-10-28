@@ -23,12 +23,56 @@
     </nav>
 
   </header>
-  <section>
+  <section id="contact-section">
+    <header>
 
-    <h1>Contact Andrew</h1>
+      <h1>Contact Page</h1>
+      <p>Contact information, get in touch.</p>
 
-    <div>
+    </header>
 
+    <div class="row">
+
+      <div class="column-panel">
+
+        <div class="column-content contact-content">
+
+          <h1>Contact Info</h1>
+
+          <ul>
+
+            <li>Name: Andrew Wilson</li>
+            <li>Github: <a href="https://www.github.com/abstructs">Abstructs</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-wilson-763501104?trk=nav_responsive_tab_profile_pic"/>Andrew Wilson</a></li>
+            <li>Email: andrew.wilson2@georgebrown.ca</li>
+
+          </ul>
+
+        </div>
+
+        <div class="column-content contact-content">
+
+          <div id="map"></div>
+
+              <script>
+                function initMap() {
+                  var gbc = {lat: 43.6761878, lng: -79.41158};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: gbc
+                  });
+                  var marker = new google.maps.Marker({
+                    position: gbc,
+                    map: map
+                  });
+                }
+              </script>
+
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMeqtltDZRW3svoNq4H-za8sy30FAgsn8&callback=initMap"></script>
+
+        </div>
+
+      </div>
 
     </div>
 

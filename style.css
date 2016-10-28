@@ -1,24 +1,32 @@
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #222;
   color: white;
 }
 
+p {
+  display: inline;
+  font-weight: 300;
+}
+
 /* Section exlusive styles */
 
-#education-section, #skills-section, #activities-section, #videos-section, #images-section {
-  margin: 70px 70px;
+#education-section, #skills-section, #activities-section, #videos-section, #images-section, #contact-section, #about-section {
+  margin: 30px auto;
+  max-width: 1100px;
+  height: 100%;
+  min-height: 300px;
 }
 
 h1, h2, h3 {
   color: #008FFF;
+  font-weight: 300;
 }
 
 /* jumbotron */
 
 #jumbotron {
-  background-image: url("/assets/landscape.jpeg");
+  background-image: url("./assets/landscape.jpeg");
   background-repeat: no-repeat;
   background-position: 0% 44%;
   background-size: cover;
@@ -26,6 +34,7 @@ h1, h2, h3 {
 }
 
 #jumbotron h1 {
+  margin-top: 0px;
   padding-top: 250px;
   font-size: 36px;
   margin-bottom: 20px;
@@ -38,19 +47,47 @@ h1, h2, h3 {
 
 /* Navbar */
 
-#nav-list li, p{
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  float: left;
   display: inline;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-#nav-list {
+nav {
+  overflow: hidden;
+  width: 100%;
   background-color: #110000;
-  padding: 15px 0px 15px 25px;
-  border-radius: 1px;
+  height: 100%;
+  min-height: 50px;
+  border: 1px #333 solid;
 }
 
-#nav-list li a {
-  text-decoration: none;
+nav li p {
+  margin: 0px;
+  display: block;
+  padding: 16px;
 }
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+}
+
+nav li a:hover {
+    background-color: #333;
+}
+
+/*Section Headers */
 
 section header h1, section header h2, section header, p {
   text-align: center;
@@ -81,19 +118,19 @@ section header h2 {
 /* Styles and photos for circles on home page*/
 
 #circle-1 {
-  background-image: url('/assets/diploma.png');
+  background-image: url('./assets/diploma.png');
   background-size: 75px 75px;
-  background-color: #4A8EB2;
+  background-color: #008FFF;
 }
 
 #circle-2 {
-  background-image: url('/assets/freecodecamp.png');
+  background-image: url('./assets/freecodecamp.png');
   background-size: 60px 60px;
   background-color: #006400;
 }
 
 #circle-3 {
-  background-image: url('/assets/money.png');
+  background-image: url('./assets/money.png');
   background-size: 60px 60px;
   background-color: #008FFF;
 }
@@ -101,7 +138,7 @@ section header h2 {
 /* Borders for panels */
 
 #education-section header {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 
 .border-1 {
@@ -115,6 +152,7 @@ section header h2 {
 .border-3 {
   border: 6px solid black;
 }
+
 /* Sizings for panels, rows and content */
 
 .column-content {
@@ -136,17 +174,17 @@ section header h2 {
 
 .row {
   margin-top: 20px;
-  /*padding-left: 10%;
-  padding-right: 10%;*/
 }
 
 /* Education Section touch-ups */
 
 .school-content, .coursework-content {
   padding: 0px 20px 0px 20px;
-  min-width: 300px;
+  min-width: 200px;
+  height: 100%;
+  min-height: 450px;
   width: 33%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .coursework-content ul li {
@@ -160,11 +198,14 @@ section header h2 {
 
 /* Skills Section */
 
+#skills-section {
+  margin-top: -20px;
+}
+
 .skills-content {
   width: 100%;
   padding-top: 90px;
   padding-bottom: 25px;
-  margin-bottom: 40px;
 }
 
 .skill-circle h2 {
@@ -188,7 +229,7 @@ section header h2 {
 /* Skills Panel Circles */
 
 #skill-circle-html5 {
-  background-image: url('/assets/skills-icons/html5.png');
+  background-image: url('./assets/skills-icons/html5.png');
   background-size: 75px 75px;
   background-color: #57231A;
   margin-top: -55px;
@@ -196,7 +237,7 @@ section header h2 {
 }
 
 #skill-circle-css3 {
-  background-image: url('/assets/skills-icons/css3.png');
+  background-image: url('./assets/skills-icons/css3.png');
   background-size: 75px 75px;
   background-color: #325EA3;
   margin-top: -55px;
@@ -204,7 +245,7 @@ section header h2 {
 }
 
 #skill-circle-javascript {
-  background-image: url('/assets/skills-icons/javascript.png');
+  background-image: url('./assets/skills-icons/javascript.png');
   background-size: 115px;
   background-color: #635A1E;
   margin-top: -55px;
@@ -213,7 +254,7 @@ section header h2 {
 }
 
 #skill-circle-jquery {
-  background-image: url('/assets/skills-icons/jquery.png');
+  background-image: url('./assets/skills-icons/jquery.png');
   background-size: 75px 75px;
   background-color: #49537F;
   margin-top: -55px;
@@ -221,7 +262,7 @@ section header h2 {
 }
 
 #skill-circle-react {
-  background-image: url('/assets/skills-icons/react.png');
+  background-image: url('./assets/skills-icons/react.png');
   background-size: 65px 65px;
   background-color: #355685;
   margin-top: -55px;
@@ -229,7 +270,7 @@ section header h2 {
 }
 
 #skill-circle-d3 {
-  background-image: url('/assets/skills-icons/d3.png');
+  background-image: url('./assets/skills-icons/d3.png');
   background-size: 55px 55px;
   background-color: #0D2A7F;
   margin-top: -40px;
@@ -239,7 +280,8 @@ section header h2 {
 /* Activities CSS */
 
 #activities-section header h2 {
-  margin-bottom: 75px;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 
 .activities-content {
@@ -254,7 +296,8 @@ section header h2 {
 .video-content {
   border: 5px black solid;
   padding-top: 20px;
-  height: 400px;
+  min-height: 350px;
+  height: 100%;
   width: 650px;
   background-color: #110000;
 }
@@ -267,18 +310,9 @@ section header h2 {
 
 .image-content {
   border: 5px black solid;
-  padding-top: 20px;
   height: 300px;
   background-color: #110000;
-}
-
-.image-content div {
   background-repeat: no-repeat;
-  width: 200px;
-  height: 100%;
-  background-position: 40% 40%;
-  display: inline-block;
-  background-image: url('/assets/gallery/parrot.jpeg');
   background-size: cover;
 }
 
@@ -289,4 +323,81 @@ section header h2 {
 
 .image-content-2 {
   width: 66%;
+}
+
+#image-1 {
+  background-image: url("./assets/gallery/bubbles.jpeg");
+  background-position: 70% 44%;
+}
+
+#image-2 {
+  background-image: url("./assets/gallery/camera.jpeg");
+  background-position: 0% 80%;
+}
+
+#image-3 {
+  background-image: url("./assets/gallery/corn.jpeg");
+  background-position: 30% 44%;
+}
+
+#image-4 {
+  background-image: url("./assets/gallery/house.jpeg");
+  background-position: 0% 44%;
+}
+
+#image-5 {
+  background-image: url("./assets/gallery/shore.jpeg");
+  background-position: 50% 0%;
+}
+
+#image-6 {
+  background-image: url("./assets/gallery/planes.jpeg");
+  background-position: 0% 44%;
+}
+
+#image-7 {
+  background-image: url("./assets/gallery/ship.jpeg");
+  background-position: 0% 44%;
+}
+
+#image-8 {
+  background-image: url("./assets/gallery/treetop.jpeg");
+  background-position: 0% 44%;
+}
+
+#image-9 {
+  background-image: url("./assets/gallery/parrot.jpeg");
+  background-position: 0% 44%;
+}
+
+/* Contact Page */
+
+.contact-content {
+  width: 100%;
+  height: 300px;
+  border: 5px solid black;
+  background-color: #110000;
+}
+
+#map {
+  width: 100%;
+  min-width: 300px;
+  height: 300px;
+}
+
+/* About Me Page */
+
+.about-content {
+  padding-top: 20px;
+  width: 100%;
+  border: 5px black solid;
+  min-height: 300px;
+  height: 100%;
+}
+
+.about-content img {
+  display: inline-block;
+  height: 150px;
+  vertical-align: middle;
+  border-radius: 50%;
 }
