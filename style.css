@@ -335,7 +335,10 @@ section header h2 {
 
 .image-content-2 {
   width: 66%;
-  min-width: 100px;
+}
+
+p.image-content-1, p.image-content-2 {
+  margin: 0px auto;
 }
 
 #image-1 {
@@ -370,16 +373,6 @@ section header h2 {
 
 #image-7 {
   background-image: url("./assets/gallery/ship.jpeg");
-  background-position: 0% 44%;
-}
-
-#image-8 {
-  background-image: url("./assets/gallery/treetop.jpeg");
-  background-position: 0% 44%;
-}
-
-#image-9 {
-  background-image: url("./assets/gallery/parrot.jpeg");
   background-position: 0% 44%;
 }
 
