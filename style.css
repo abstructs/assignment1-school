@@ -102,12 +102,13 @@ section header h2 {
 .column-panel {
   margin: 40px auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column-circle {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin: 0px auto;
   border-radius: 50%;
   margin-top: -55px;
   margin-left: 33%;
@@ -137,9 +138,6 @@ section header h2 {
 
 /* Borders for panels */
 
-#education-section header {
-  margin-bottom: 80px;
-}
 
 .border-1 {
   border: 6px solid #008FFF;
@@ -180,10 +178,12 @@ section header h2 {
 
 .school-content, .coursework-content {
   padding: 0px 20px 0px 20px;
-  min-width: 200px;
   height: 100%;
   min-height: 450px;
-  width: 33%;
+  max-height: 500px;
+  width: 25%;
+  min-width: 300px;
+  margin: 50px auto;
   margin-bottom: 20px;
 }
 
@@ -199,7 +199,7 @@ section header h2 {
 /* Skills Section */
 
 #skills-section {
-  margin-top: -20px;
+  margin-top: -40px;
 }
 
 .skills-content {
@@ -285,20 +285,23 @@ section header h2 {
 }
 
 .activities-content {
+  margin: 0px auto;
   height: 300px;
   margin-bottom: 50px;
-  min-width: 300px;
-  width: 50%;
+  min-width: 400px;
+  width: 45%;
 }
 
 /* Videos Page */
 
 .video-content {
+  margin: 0px auto;
   border: 5px black solid;
   padding-top: 20px;
   min-height: 350px;
   height: 100%;
-  width: 650px;
+  width: 45%;
+  min-width: 220px;
   background-color: #110000;
 }
 
@@ -307,6 +310,12 @@ section header h2 {
 }
 
 /* Images Page */
+
+.column-panel-image {
+  margin: 0px 0px;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 .image-content {
   border: 5px black solid;
@@ -318,11 +327,11 @@ section header h2 {
 
 .image-content-1 {
   width: 31%;
-  display:inline-block;
 }
 
 .image-content-2 {
   width: 66%;
+  min-width: 100px;
 }
 
 #image-1 {
@@ -373,7 +382,9 @@ section header h2 {
 /* Contact Page */
 
 .contact-content {
-  width: 100%;
+  margin: 20px auto;
+  min-width: 400px;
+  width: 45%;
   height: 300px;
   border: 5px solid black;
   background-color: #110000;
