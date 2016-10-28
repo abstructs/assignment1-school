@@ -4,6 +4,10 @@ body {
   color: white;
 }
 
+h1::first-letter {
+  text-transform: uppercase;
+}
+
 p {
   display: inline;
   font-weight: 300;
@@ -386,8 +390,14 @@ section header h2 {
   min-width: 400px;
   width: 45%;
   height: 300px;
-  border: 5px solid black;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
   background-color: #110000;
+}
+
+.contact-list li {
+  font-style: italic;
 }
 
 #map {
