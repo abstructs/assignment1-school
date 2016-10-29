@@ -1,98 +1,84 @@
 <!DOCTYPE html>
-<head>
-  <title>Contact Information</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="The page containing contact information for me and a google map created using the googlemaps api. If you wish to contact me you will find the information here.">
-  <meta name="keywords" content="contact, address, google map, email, photo, profile">
-  <meta name="author" content="Andrew Wilson">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
-</head>
-<body>
-
-  <header>
-
-    <nav>
-
-      <ul id="nav-list">
-        <li><p>Andrew Wilson</p></li>
-        <li><a href=index.html>Home</a></li>
-        <li><a href=video.html>Video</a></li>
-        <li><a href=image.html>Images</a></li>
-        <li><a href=contact.html class="active">Contact</a></li>
-        <li><a href=aboutme.html>About Me</a></li>
-      </ul>
-
-    </nav>
-
-  </header>
-
-  <section id="contact-section">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Information</title>
+    <meta name="description" content="The page containing contact information for me and a google map created using the googlemaps api. You can click the links to go to my linkedin and github or send me an email.">
+    <meta name="keywords" content="contact, address, google map, email">
+    <meta name="author" content="Andrew Wilson">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
+  </head>
+  <body>
 
     <header>
 
-      <h1>Contact Page</h1>
-      <p>Contact information, get in touch.</p>
+      <nav>
+
+        <ul id="nav-list">
+          <li><p>Andrew Wilson</p></li>
+          <li><a href=index.html>Home</a></li>
+          <li><a href=video.html>Video</a></li>
+          <li><a href=image.html>Images</a></li>
+          <li><a href=contact.html class="active">Contact</a></li>
+          <li><a href=aboutme.html>About Me</a></li>
+        </ul>
+
+      </nav>
 
     </header>
 
-    <div class="row">
+    <section id="contact-section">
 
-      <div class="column-panel">
+      <header>
 
-        <div class="column-content contact-content">
+        <h1>Contact Page</h1>
+        <p>Contact information, get in touch.</p>
 
-          <h1>Contact Info</h1>
+      </header>
 
-          <ul class="contact-list">
-            <li >Name: Andrew Wilson</li>
-            <li>Github: <a href="https://www.github.com/abstructs" target="_blank">Abstructs</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-wilson-763501104?trk=nav_responsive_tab_profile_pic" target="_blank">Andrew Wilson</a></li>
-            <li>Email: <a href="mailto:andrew.wilson2@georgebrown.ca?Subject=Hello%20Andrew" target="_top">andrew.wilson2@georgebrown.ca</a></li>
-          </ul>
+      <div class="row">
 
-        </div>
+        <div class="column-panel">
 
-        <div class="column-content contact-content">
+          <div class="column-content contact-content">
 
-          <div id="map"></div>
+            <h1>Contact Info</h1>
 
-              <script>
-                function initMap() {
-                  var gbc = {lat: 43.6761878, lng: -79.41158};
-                  var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 13,
-                    center: gbc
-                  });
-                  var marker = new google.maps.Marker({
-                    position: gbc,
-                    map: map
-                  });
-                }
-              </script>
+            <ul class="contact-list">
+              <li >Name: Andrew Wilson</li>
+              <li>Github: <a href="https://www.github.com/abstructs" target="_blank">Abstructs</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/andrew-wilson-763501104?trk=nav_responsive_tab_profile_pic" target="_blank">Andrew Wilson</a></li>
+              <li>Email: <a href="mailto:andrew.wilson2@georgebrown.ca?Subject=Hello%20Andrew" target="_top">andrew.wilson2@georgebrown.ca</a></li>
+            </ul>
 
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMeqtltDZRW3svoNq4H-za8sy30FAgsn8&callback=initMap"></script>
+          </div>
+
+          <div class="column-content contact-content">
+
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.660066576553!2d-79.41246147336234!3d43.67603913881092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b349c702f728d%3A0xbdd377adae546b30!2s160+Kendal+Ave%2C+Toronto%2C+ON+M5R+1M3!5e0!3m2!1sen!2sca!4v1477755985166"></iframe>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <footer>
 
-  <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+        </a>
+      </p>
 
-    <p>
-      <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-      </a>
-    </p>
+      <script src=http://my.gblearn.com/js/loadscript.js></script>
 
-    <script src=http://my.gblearn.com/js/loadscript.js></script>
+    </footer>
 
-  </footer>
-
-</body>
+  </body>
+</html>

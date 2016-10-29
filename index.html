@@ -1,210 +1,218 @@
 <!DOCTYPE html>
-<head>
-  <title>Home Page</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="The homepage/resume displaying information about my education and other things. I created the components myself for this project, the icons are from flaticon.com. Also I am avalible for freelance work!">
-  <meta name="keywords" content="resume, home, assignement, index, education, skills, experience">
-  <meta name="author" content="Andrew Wilson">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
-</head>
-<body>
-
-  <nav>
-    <ul>
-      <li><p>Andrew Wilson</p></li>
-      <li><a href=index.html class="active">Home</a></li>
-      <li><a href=video.html>Video</a></li>
-      <li><a href=image.html>Images</a></li>
-      <li><a href=contact.html>Contact</a></li>
-      <li><a href=aboutme.html>About Me</a></li>
-    </ul>
-  </nav>
-
-  <section id="head-section">
-
-    <div id="jumbotron">
-
-      <h1>Welcome to Assignment 1</h1>
-      <h2>- Web Fundementals</h2>
-      <p>- Here you'll find the website created for Assignment 1.</p>
-
-    </div>
-
-  </section>
-
-  <section id="education-section">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <meta name="description" content="The homepage/resume displaying information about my education and other things. I created the components myself for this project, the icons are from flaticon.com. Also I am avalible for freelance work!">
+    <meta name="keywords" content="resume, home, assignement, index, education, skills, experience">
+    <meta name="author" content="Andrew Wilson">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i" rel="stylesheet">
+  </head>
+  <body>
 
     <header>
 
-      <h2>Education</h2>
-      <p>Learning is always an ongoing process, here are some places I've learned from.</p>
+      <nav>
+
+        <ul id="nav-list">
+          <li><p>Andrew Wilson</p></li>
+          <li><a href=index.html class="active">Home</a></li>
+          <li><a href=video.html>Video</a></li>
+          <li><a href=image.html>Images</a></li>
+          <li><a href=contact.html>Contact</a></li>
+          <li><a href=aboutme.html>About Me</a></li>
+        </ul>
+
+      </nav>
 
     </header>
 
-    <div class="row">
+    <section id="head-section">
 
-      <div class="column-panel">
+      <div id="jumbotron">
 
-        <div class="column-content border-1 school-content">
+        <h1>Welcome to Assignment 1</h1>
+        <h2>- Web Fundementals</h2>
+        <p>- Here you'll find the website created for Assignment 1.</p>
 
-          <div class="column-circle" id="circle-1"><div></div></div>
+      </div>
 
-          <ul>
+    </section>
 
-            <li><h2>St. Margeurite D'Youville</h2></li>
-            <li><p>Andrew has attenended High-School from 2011 to 2015, mostly taking courses in computer sciencen and computer engineering.</p></li>
-            <li><h2>George Brown College</h2></li>
-            <li><p>Andrew is currently in school at George Brown College taking Computer Programming and Analysis (T-127)</p></li>
+    <section id="education-section">
 
-          </ul>
+      <header>
 
-        </div>
+        <h2>Education</h2>
+        <p>Learning is always an ongoing process, here are some places I've learned from.</p>
 
-        <div class="column-content border-2 school-content">
+      </header>
 
-          <div class="column-circle" id="circle-2"></div>
+      <div class="row">
 
-          <ul>
+        <div class="column-panel">
 
-            <li><h2>FreeCodeCamp</h2></li>
-            <li><p>FreeCodeCamp is an open source online cirriculumn.</p></li>
-            <li>
-              <h3>Front-End Certificate</h3>
-              <p>Earned the front-end certificate from FreeCodeCamp, included HTML, CSS, Javascript, jQuery and AJAX.</p>
-            </li>
-            <li>
-              <h3>Data-Visualization Certificate</h3>
-              <p>Earned the front-end certificate from FreeCodeCamp, included D3, JSON, HTML, Javascript and SVG.</p>
-            </li>
+          <div class="column-content border-1 school-content">
 
-          </ul>
+            <div class="column-circle" id="circle-1"><div></div></div>
 
-        </div>
+            <ul>
 
-        <div class="column-content border-1 coursework-content">
+              <li><h2>St. Margeurite D'Youville</h2></li>
+              <li><p>Andrew has attenended High-School from 2011 to 2015, mostly taking courses in computer sciencen and computer engineering.</p></li>
+              <li><h2>George Brown College</h2></li>
+              <li><p>Andrew is currently in school at George Brown College taking Computer Programming and Analysis (T-127)</p></li>
 
-          <div class="column-circle" id="circle-3"></div>
+            </ul>
 
-          <h1>Relevant Coursework</h1>
+          </div>
 
-          <ul>
+          <div class="column-content border-2 school-content">
 
-            <li>
-              <h3>All Projects Can Be Found On <a href="http://github.com/abstructs" target="_blank" rel="noopener noreferrer">Github</a></h3>
-            </li>
-            <li>
-              <a href="http://codepen.io/abstructs/pen/ZOvRRN" target="_blank" rel="noopener noreferrer">Meteorite Landing Graph Using D3.</a><br>
-            </li>
-            <li>
-              <a href="http://codepen.io/abstructs/pen/EPdeGg" target="_blank" rel="noopener noreferrer">Pomodoro Timer Using Vanilla JS and jQuery.</a><br>
-            </li>
-            <li>
-              <a href="http://codepen.io/abstructs/pen/MyNbJz" target="_blank" rel="noopener noreferrer">Recipe Box Using React.js</a>
-            </li>
-            <li>
-              <a href="http://voticonapp.heroku.com/" target="_blank" rel="noopener noreferrer">Full-Stack Voting App Using Express, React, Mongo and Node.</a>
-            </li>
+            <div class="column-circle" id="circle-2"></div>
 
-          </ul>
+            <ul>
+
+              <li><h2>FreeCodeCamp</h2></li>
+              <li><p>FreeCodeCamp is an open source online cirriculumn.</p></li>
+              <li>
+                <h3>Front-End Certificate</h3>
+                <p>Earned the front-end certificate from FreeCodeCamp, included HTML, CSS, Javascript, jQuery and AJAX.</p>
+              </li>
+              <li>
+                <h3>Data-Visualization Certificate</h3>
+                <p>Earned the front-end certificate from FreeCodeCamp, included D3, JSON, HTML, Javascript and SVG.</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="column-content border-1 coursework-content">
+
+            <div class="column-circle" id="circle-3"></div>
+
+            <h1>Relevant Coursework</h1>
+
+            <ul>
+
+              <li>
+                <h3>All Projects Can Be Found On <a href="http://github.com/abstructs" target="_blank" rel="noopener noreferrer">Github</a></h3>
+              </li>
+              <li>
+                <a href="http://codepen.io/abstructs/pen/ZOvRRN" target="_blank" rel="noopener noreferrer">Meteorite Landing Graph Using D3.</a><br>
+              </li>
+              <li>
+                <a href="http://codepen.io/abstructs/pen/EPdeGg" target="_blank" rel="noopener noreferrer">Pomodoro Timer Using Vanilla JS and jQuery.</a><br>
+              </li>
+              <li>
+                <a href="http://codepen.io/abstructs/pen/MyNbJz" target="_blank" rel="noopener noreferrer">Recipe Box Using React.js</a>
+              </li>
+              <li>
+                <a href="http://voticonapp.heroku.com/" target="_blank" rel="noopener noreferrer">Full-Stack Voting App Using Express, React, Mongo and Node.</a>
+              </li>
+
+            </ul>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <section id="skills-section">
 
-  <section id="skills-section">
+      <header>
 
-    <header>
+        <h2>Skills</h2>
+        <p>A list of technologies I have worked with and continue to improve on.</p>
 
-      <h2>Skills</h2>
-      <p>A list of technologies I have worked with and continue to improve on.</p>
+      </header>
 
-    </header>
+      <div class="row">
 
-    <div class="row">
+        <div class="column-panel">
 
-      <div class="column-panel">
+          <div class="column-content border-3 skills-content">
 
-        <div class="column-content border-3 skills-content">
+            <div class="skill-circle" id="skill-circle-html5"><div><h2>HTML5</h2></div></div>
+            <div class="skill-circle" id="skill-circle-css3"><div><h2>CSS3</h2></div></div>
+            <div class="skill-circle" id="skill-circle-javascript"><div><h2>Javascript</h2></div></div>
+            <div class="skill-circle" id="skill-circle-jquery"><div><h2>jQuery</h2></div></div>
+            <div class="skill-circle" id="skill-circle-react"><div><h2>React</h2></div></div>
+            <div class="skill-circle" id="skill-circle-d3"><div><h2>D3</h2></div></div>
 
-          <div class="skill-circle" id="skill-circle-html5"><div><h2>HTML5</h2></div></div>
-          <div class="skill-circle" id="skill-circle-css3"><div><h2>CSS3</h2></div></div>
-          <div class="skill-circle" id="skill-circle-javascript"><div><h2>Javascript</h2></div></div>
-          <div class="skill-circle" id="skill-circle-jquery"><div><h2>jQuery</h2></div></div>
-          <div class="skill-circle" id="skill-circle-react"><div><h2>React</h2></div></div>
-          <div class="skill-circle" id="skill-circle-d3"><div><h2>D3</h2></div></div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="activities-section">
-
-    <header>
-
-      <h2>And Finally...</h2>
-
-    </header>
-
-    <div class="row">
-
-      <div class="column-panel">
-
-        <div class="column-content activities-content border-1">
-
-          <h2>Activities</h2>
-          <h3>A list of things I love to do</h3>
-
-          <ul>
-
-            <li>Reading books</li>
-            <li>Fitness</li>
-            <li>Cooking</li>
-            <li>Inspiring people</li>
-            <li>Learning</li>
-
-          </ul>
-
-        </div>
-
-        <div class="column-content activities-content border-1">
-
-          <h2>Professional Experience</h2>
-
-          <ul>
-
-            <li>Currently I have no professional experience.</li>
-
-          </ul>
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <section id="activities-section">
 
-  <footer>
+      <header>
 
-    <p>
-      <a href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-      </a>
-    </p>
+        <h2>And Finally...</h2>
 
-    <script src=http://my.gblearn.com/js/loadscript.js></script>
+      </header>
 
-  </footer>
+      <div class="row">
 
-</body>
+        <div class="column-panel">
+
+          <div class="column-content activities-content border-1">
+
+            <h2>Activities</h2>
+            <h3>A list of things I love to do</h3>
+
+            <ul>
+
+              <li>Reading books</li>
+              <li>Fitness</li>
+              <li>Cooking</li>
+              <li>Inspiring people</li>
+              <li>Learning</li>
+
+            </ul>
+
+          </div>
+
+          <div class="column-content activities-content border-1">
+
+            <h2>Professional Experience</h2>
+
+            <ul>
+
+              <li>Currently I have no professional experience.</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+        </a>
+      </p>
+
+      <script src=http://my.gblearn.com/js/loadscript.js></script>
+
+    </footer>
+
+  </body>
+</html>
