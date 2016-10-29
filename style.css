@@ -4,7 +4,19 @@ body {
   color: white;
 }
 
+a {
+  color: #2D5B70;
+}
+
+a:visited {
+  color: #2D5B70;
+}
+
 h1::first-letter {
+  text-transform: uppercase;
+}
+
+#videos-section::first-letter, #images-section::first-letter {
   text-transform: uppercase;
 }
 
@@ -30,7 +42,7 @@ h1, h2, h3 {
 /* jumbotron */
 
 #jumbotron {
-  background-image: url("./assets/landscape.jpeg");
+  background-image: url("./images/landscape.jpeg");
   background-repeat: no-repeat;
   background-position: 0% 44%;
   background-size: cover;
@@ -87,8 +99,12 @@ nav li a {
   padding: 16px;
 }
 
+.active {
+  background-color: #333;
+}
+
 nav li a:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 /*Section Headers */
@@ -123,19 +139,19 @@ section header h2 {
 /* Styles and photos for circles on home page*/
 
 #circle-1 {
-  background-image: url('./assets/diploma.png');
+  background-image: url('./images/diploma.png');
   background-size: 75px 75px;
   background-color: #008FFF;
 }
 
 #circle-2 {
-  background-image: url('./assets/freecodecamp.png');
+  background-image: url('./images/freecodecamp.png');
   background-size: 60px 60px;
   background-color: #006400;
 }
 
 #circle-3 {
-  background-image: url('./assets/skills.png');
+  background-image: url('./images/skills.png');
   background-size: 60px 60px;
   background-color: #008FFF;
 }
@@ -233,7 +249,7 @@ section header h2 {
 /* Skills Panel Circles */
 
 #skill-circle-html5 {
-  background-image: url('./assets/skills-icons/html5.png');
+  background-image: url('./images/html5.png');
   background-size: 75px 75px;
   background-color: #57231A;
   margin-top: -55px;
@@ -241,7 +257,7 @@ section header h2 {
 }
 
 #skill-circle-css3 {
-  background-image: url('./assets/skills-icons/css3.png');
+  background-image: url('./images/css3.png');
   background-size: 75px 75px;
   background-color: #325EA3;
   margin-top: -55px;
@@ -249,7 +265,7 @@ section header h2 {
 }
 
 #skill-circle-javascript {
-  background-image: url('./assets/skills-icons/javascript.png');
+  background-image: url('./images/javascript.png');
   background-size: 115px;
   background-color: #635A1E;
   margin-top: -55px;
@@ -258,7 +274,7 @@ section header h2 {
 }
 
 #skill-circle-jquery {
-  background-image: url('./assets/skills-icons/jquery.png');
+  background-image: url('./images/jquery.png');
   background-size: 75px 75px;
   background-color: #49537F;
   margin-top: -55px;
@@ -266,7 +282,7 @@ section header h2 {
 }
 
 #skill-circle-react {
-  background-image: url('./assets/skills-icons/react.png');
+  background-image: url('./images/react.png');
   background-size: 65px 65px;
   background-color: #355685;
   margin-top: -55px;
@@ -274,7 +290,7 @@ section header h2 {
 }
 
 #skill-circle-d3 {
-  background-image: url('./assets/skills-icons/d3.png');
+  background-image: url('./images/d3.png');
   background-size: 55px 55px;
   background-color: #0D2A7F;
   margin-top: -40px;
@@ -300,6 +316,7 @@ section header h2 {
 
 iframe {
   width: 100%;
+  border: none;
 }
 
 .video-content {
@@ -346,37 +363,37 @@ p.image-content-1, p.image-content-2 {
 }
 
 #image-1 {
-  background-image: url("./assets/gallery/bubbles.jpeg");
+  background-image: url("./images/bubbles.jpeg");
   background-position: 70% 44%;
 }
 
 #image-2 {
-  background-image: url("./assets/gallery/camera.jpeg");
+  background-image: url("./images/camera.jpeg");
   background-position: 0% 80%;
 }
 
 #image-3 {
-  background-image: url("./assets/gallery/corn.jpeg");
+  background-image: url("./images/corn.jpeg");
   background-position: 30% 44%;
 }
 
 #image-4 {
-  background-image: url("./assets/gallery/house.jpeg");
+  background-image: url("./images/house.jpeg");
   background-position: 0% 44%;
 }
 
 #image-5 {
-  background-image: url("./assets/gallery/shore.jpeg");
+  background-image: url("./images/shore.jpeg");
   background-position: 50% 0%;
 }
 
 #image-6 {
-  background-image: url("./assets/gallery/planes.jpeg");
+  background-image: url("./images/planes.jpeg");
   background-position: 0% 44%;
 }
 
 #image-7 {
-  background-image: url("./assets/gallery/ship.jpeg");
+  background-image: url("./images/ship.jpeg");
   background-position: 0% 44%;
 }
 
